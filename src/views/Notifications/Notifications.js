@@ -1,24 +1,16 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-// nodejs library to set properties for components
-
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-// core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
-
-
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 
-// 
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -40,7 +32,60 @@ const useStyles = makeStyles({
     marginBottom: 12,
   },
 });
+const buttonToLink = {
 
+  textAlign: 'center',
+  background: '#FF0000',
+  fontSize: '1em',
+margin: ".3rem ",
+      padding: "5px px",
+      // border: 'groove',
+      cursor: 'pointer', 
+      minHeight: "auto",
+      minWidth: "auto",
+      position: "relative",
+      fontWeight: "400",
+      letterSpacing: "0",
+      // willChange: "box-shadow, transform",
+      // opacity:0.8,
+
+}
+const buttonToLink1 = {
+
+  textAlign: 'center',
+  background: '#FFFF00',
+  fontSize: '1em',
+margin: ".3rem ",
+      padding: "5px px",
+      // border: 'groove',
+      cursor: 'pointer', 
+      minHeight: "auto",
+      minWidth: "auto",
+      position: "relative",
+      fontWeight: "400",
+      letterSpacing: "0",
+      // willChange: "box-shadow, transform",
+      // opacity:0.8,
+
+}
+const buttonToLink2 = {
+
+  textAlign: 'center',
+  background: '#008000',
+  fontSize: '1em',
+margin: ".3rem ",
+      padding: "5px px",
+      // border: 'groove',
+      cursor: 'pointer', 
+      minHeight: "auto",
+      minWidth: "auto",
+      position: "relative",
+      fontWeight: "400",
+      letterSpacing: "0",
+      // willChange: "box-shadow, transform",
+      // opacity:0.8,
+
+}
 
 
 export default function Notifications() {
@@ -52,10 +97,9 @@ export default function Notifications() {
   //  
 <Card className={classes.root}>
 
-  
     <CardHeader color="primary">
     <GridItem xs={12} sm={12} md={12}/>
-        <h3 className={classes.cardTitleWhite}>ISSUES</h3>
+        <h2 className={classes.cardTitleWhite}><b>ISSUES</b></h2>
         
        </CardHeader>
       <CardBody>
@@ -77,10 +121,10 @@ export default function Notifications() {
         
           <br />
           {'Sijio m peter'}
-        </Typography>npm 
+        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">SHOW TOPPER</Button>
+      <button style={buttonToLink} onClick={event =>  window.location.href='/admin/issue'}> <b>High Priority</b></button>
       </CardActions>
            
       </Card>
@@ -106,7 +150,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">SHOW TOPPER</Button>
+      <button style={buttonToLink1} onClick={event =>  window.location.href='/admin/issue'}><b>In Progress</b></button>
       </CardActions>
            
       </Card>
@@ -131,7 +175,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">SHOW TOPPER</Button>
+      <button style={buttonToLink2} onClick={event =>  window.location.href='/admin/issue'}> <b>Done</b></button>
       </CardActions>
       </Card>
           
@@ -161,7 +205,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">HIGH</Button>
+      <button style={buttonToLink} onClick={event =>  window.location.href='/admin/issue'}> <b>High Priority</b></button>
       </CardActions>
       </Card>
           </GridItem>
@@ -185,7 +229,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">HIGH</Button>
+      <button style={buttonToLink1} onClick={event =>  window.location.href='/admin/issue'}> <b>In progress</b></button>
       </CardActions>
       </Card>
           </GridItem>
@@ -207,7 +251,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">HIGH</Button>
+      <button style={buttonToLink2} onClick={event =>  window.location.href='//admin/issue'}> <b>Done</b></button>
       </CardActions>
       </Card>
          </GridItem>
@@ -241,7 +285,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">LOW</Button>
+      <button style={buttonToLink} onClick={event =>  window.location.href='/admin/issue'}> <b>High Priority</b></button>
       </CardActions>
       </Card>
           </GridItem>
@@ -263,7 +307,7 @@ export default function Notifications() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">HIGH</Button>
+      <button style={buttonToLink2} onClick={event =>  window.location.href='/admin/issue'}><b>Done</b></button>
       </CardActions>
       </Card>
          </GridItem>

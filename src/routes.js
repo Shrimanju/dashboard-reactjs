@@ -4,7 +4,7 @@ import FileCopySharpIcon from '@material-ui/icons/FileCopySharp';
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
-
+import Createissue from "./components/Createissue";
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -28,7 +28,16 @@ const dashboardRoutes = [
     icon: CreateSharpIcon,
     component: UserProfile,
     layout: "/admin"
+  },
+  {
+    path: "/issue",
+   
+    icon: CreateSharpIcon,
+    component: Createissue,
+    layout: "/admin"
+    
   }
+  
 ];
 
 export default dashboardRoutes;
