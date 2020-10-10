@@ -26,7 +26,9 @@ const dashboardRoutes = [
     path: "/user",
     name: "Create Issues",
     icon: CreateSharpIcon,
-    component: UserProfile,
+    component: UserProfile
+
+,
     layout: "/admin"
   },
   {

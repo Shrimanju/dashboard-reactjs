@@ -84,9 +84,10 @@ export default function Admin({ ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"BIRA"}
+      
         logo={logo}
         image={image}
+        
         
       />
       <div className={classes.mainPanel} ref={mainPanel}>

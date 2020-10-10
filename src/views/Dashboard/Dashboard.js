@@ -5,11 +5,11 @@ import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
-// import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
-
+import Highpriority from "components/Highpriority.js";
+import Allissue from "components/Allissue.js";
 import { dailySalesChart } from "variables/charts.js";
-
+import Recentlyupdatedissue from "components/Recentlyupdatedissue.js";
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -18,7 +18,7 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <div>
-      <GridContainer>
+       <GridContainer>
         <GridItem xs={12} sm={12} md={11}>
           <Card chart>
             <CardHeader>
@@ -46,6 +46,22 @@ export default function Dashboard() {
           </Card>
         </GridItem>
       </GridContainer>
+      
+      <GridContainer>
+         <GridItem xs={12} sm={12} md={4}>
+        <Highpriority/>
+      
+        </GridItem>
+        <GridItem xs={12} sm={12} md={4}>
+      <Recentlyupdatedissue/>
+        </GridItem>
+
+
+        <GridItem xs={12} sm={12} md={4}>
+        <Allissue/>
+      </GridItem>
+
+       </GridContainer>
     </div>
   );
 }

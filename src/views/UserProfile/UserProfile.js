@@ -64,7 +64,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function UserProfile() {
+export default function UserProfile
+
+() {
   const classes = useStyles();
   const [age, setAge] = React.useState('');
   const handleChange = (event) => {
@@ -145,8 +147,9 @@ export default function UserProfile() {
                 </GridItem>
               </GridContainer><br/>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                <InputLabel style={{ color: "Black" }}>Priority:</InputLabel>
+
+              <GridItem xs={12} sm={12} md={6}>
+                <InputLabel style={{ color: "Black" }}>Assignee:</InputLabel>
                 <FormControl className={classes.margin}>
        
       
@@ -165,6 +168,11 @@ export default function UserProfile() {
         </NativeSelect>
       </FormControl>
                 </GridItem>
+
+
+
+
+               
                 <GridItem xs={12} sm={12} md={6}>
                 <InputLabel style={{ color: "Black" }}>Assignee:</InputLabel>
                 <FormControl className={classes.margin}>
